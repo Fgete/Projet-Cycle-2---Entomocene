@@ -1,0 +1,32 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Random = UnityEngine.Random;
+
+public class Collectable_Ammo : MonoBehaviour
+{
+    public int maxAmmo;
+    public float velocity;
+    public ParticleSystem particles;
+
+    private void Start()
+    {
+        Transform particleParent = GameObject.Find("--- VFX ---").transform;
+        Instantiate(particles, transform.position, Quaternion.Euler(-90, 0, 0), particleParent);
+    }
+
+    private void Update()
+    {
+        transform.eulerAngles += new Vector3(0, Time.deltaTime * velocity, 0);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            other.GetComponent<Character_Stats>().GetAmmo(Random.Range(1, maxAmmo));
+            Destroy(gameObject);
+        }
+    }
+}
