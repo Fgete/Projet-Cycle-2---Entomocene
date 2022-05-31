@@ -1,0 +1,223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3096406549729621082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8607961305145414310}
+  - component: {fileID: 6250339473703150923}
+  - component: {fileID: 7816622272190747265}
+  m_Layer: 0
+  m_Name: FallingObjectsHidder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8607961305145414310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3096406549729621082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 1000, y: 1000, z: 1000}
+  m_Children: []
+  m_Father: {fileID: 8170743559140949965}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6250339473703150923
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3096406549729621082}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &7816622272190747265
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3096406549729621082}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 554c5a3a65fee3d44953f6fe846fbe1f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8170743559140949966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8170743559140949965}
+  - component: {fileID: 9204019691311545849}
+  - component: {fileID: 7558531768822621785}
+  m_Layer: 0
+  m_Name: --- MAP BUILDING ---
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8170743559140949965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170743559140949966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8607961305145414310}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9204019691311545849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170743559140949966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5759d26e52087894f81aba46f9dd791e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reBuild: 0
+  iterations: 8
+  chanceOfExpension: 50
+  corridorRatio: 50
+  minimumRoomNumber: 20
+  firstRoomPrefab: {fileID: 2429662722321981436, guid: e302a400e1ae7c74fbcac4a077e9c6ce, type: 3}
+  lastRoomPrefab: {fileID: 2429662722321981436, guid: b892d3cd8684acd44b2532009b9bbb6f, type: 3}
+  roomPrefabs:
+  - {fileID: 2429662722321981436, guid: 2126a2689b728b949a5240cc707f767e, type: 3}
+  - {fileID: 2429662722321981436, guid: cac5112b2f3334344bf1d38188156e16, type: 3}
+  - {fileID: 2429662722321981436, guid: 2363444f8a693654cab7e18eb1016c25, type: 3}
+  - {fileID: 2429662722321981436, guid: a035ba50b6b25cc47b15602e59d2f2cd, type: 3}
+  - {fileID: 2429662722321981436, guid: 2bccadf5c74e4614e8948261c21d3968, type: 3}
+  - {fileID: 2429662722321981436, guid: 062f895ee96da0f49bcd609f6c83d8a5, type: 3}
+  - {fileID: 2429662722321981436, guid: af4a6cdae787a9f4c8898d970e6b6240, type: 3}
+  - {fileID: 2429662722321981436, guid: 2161a13eb522d5147a43daedd2404bd1, type: 3}
+  - {fileID: 2429662722321981436, guid: d7fefc8c19430cb42a9d274718851ba6, type: 3}
+  - {fileID: 2429662722321981436, guid: 6d38fc14ade71bd4a9ea2701f45f5b77, type: 3}
+  - {fileID: 2429662722321981436, guid: ba63de924812dfc45852963ccfe49b33, type: 3}
+  - {fileID: 2429662722321981436, guid: 0a6ca0116b7b09b4e89ab937ab77d939, type: 3}
+  - {fileID: 2429662722321981436, guid: 0f12a0f7e06cd2d4fa4c5174bfe4de40, type: 3}
+  - {fileID: 2429662722321981436, guid: 4e5769333d86471459d930f8f81f2c10, type: 3}
+  - {fileID: 2429662722321981436, guid: 87e8030584af66f458e89dac9e44707a, type: 3}
+  corridorPrefabs:
+  - {fileID: 2429662722321981436, guid: 0ece54ab9098fc945988c7cbbda811b2, type: 3}
+  - {fileID: 2429662722321981436, guid: df16401bdacfff04d937d6fd641d3d49, type: 3}
+  - {fileID: 2429662722321981436, guid: 58be076d110e7274a875945a0e49b793, type: 3}
+  - {fileID: 2429662722321981436, guid: 39c014ee7933aa646b9ae79326213555, type: 3}
+  - {fileID: 2429662722321981436, guid: 153706349aef3bd4895aa087af29bb93, type: 3}
+  - {fileID: 2429662722321981436, guid: dd51312caa30ecf4a9833ae0bda5e29a, type: 3}
+  - {fileID: 2429662722321981436, guid: 44add1de53217ad4aa849185fd5e8c9b, type: 3}
+  - {fileID: 2429662722321981436, guid: 4100a02bceca02c408ba3c0da7967ce5, type: 3}
+  - {fileID: 2429662722321981436, guid: 7b3492db071b55c4fb9a1a34eb5d149f, type: 3}
+  - {fileID: 2429662722321981436, guid: f8face7874af3784b8a97b5648d3e17b, type: 3}
+  lastRoomSpawned: 0
+  wallPools:
+  - name: Brick
+    prefabs:
+    - {fileID: 599117737689192593, guid: 379995464995e5c45afeae32d4ef2616, type: 3}
+    - {fileID: 6801534791479656100, guid: 03b9c84830d587c43a94621752ea1d99, type: 3}
+    - {fileID: 2174666616359754550, guid: 299f346f00cdd0e438156ba12b60fcbb, type: 3}
+    - {fileID: 4391496387240881212, guid: 18a037d59661cd14c82b0b9d4e12b46c, type: 3}
+    - {fileID: 369682040503756792, guid: e5c291f69fce18b49a75e8631d54b12f, type: 3}
+    - {fileID: 7140964055130808281, guid: d0349d48e77f9744db55bc6aeaa8d81e, type: 3}
+  - name: Metal
+    prefabs:
+    - {fileID: 5290614664822938234, guid: 50edde9a5af1ee8478a74ce5aa878d49, type: 3}
+    - {fileID: 3374332313998934244, guid: 489b482ab90a20443b7f0855ef7f2e6f, type: 3}
+    - {fileID: 6704725144322727320, guid: 1f12d46f2c454bb48b571357483e8f98, type: 3}
+    - {fileID: 6997941475395929827, guid: 363ed1f789ef42841a0b2fefaa55da5b, type: 3}
+    - {fileID: 429636140876983867, guid: 2e28a26733a37f14fafe0a956e3c78ff, type: 3}
+    - {fileID: 4463457457417483662, guid: 330750938f6a40645af143643af7faa4, type: 3}
+    - {fileID: 608480676754746336, guid: dd1a2fd3ecb2f6645bfc00f19eebc054, type: 3}
+  openingPools:
+  - name: Brick
+    prefabs:
+    - {fileID: 918387638522775253, guid: ca6ed850cf32a6849a1854a032256975, type: 3}
+  - name: Concrete
+    prefabs:
+    - {fileID: 918387638522775253, guid: 974672569ef26734d9b61fbfb76497e2, type: 3}
+  floorPools:
+  - name: Stone
+    prefabs:
+    - {fileID: 6726501823666539287, guid: d0cc650e17268494e94de59b5fa53881, type: 3}
+  - name: TIle
+    prefabs:
+    - {fileID: 6726501823666539287, guid: ff88ddabae06c804ba7b8b8204cd3ad0, type: 3}
+    - {fileID: 3402526560312270775, guid: 1a0c6d5caf8980c419f9adc6265c64ff, type: 3}
+    - {fileID: 1052168711049292364, guid: 531b48d3d9ba7604c84d20ead77023d7, type: 3}
+    - {fileID: 7751135048929474222, guid: e6f5463360fa67a499b57b4d3871907b, type: 3}
+    - {fileID: 4846306159127110978, guid: ada76696b37ba284198caccc28d3e825, type: 3}
+    - {fileID: 5883299451936380384, guid: 9e9ebabdf9bf1ea4790f5a0f2d152aad, type: 3}
+    - {fileID: 2446875971011038913, guid: 09e3ad17a200fa847b3b59c3fa4ef69d, type: 3}
+    - {fileID: 9069927923827521411, guid: f47a1f9fd2e0ab449a244cd89222344c, type: 3}
+    - {fileID: 6072487634572787271, guid: 2c4673f5d20537448a658fbd194e70b4, type: 3}
+  - name: Mud
+    prefabs:
+    - {fileID: 6726501823666539287, guid: 18594bc6429d0cd4ab74ed37d91d995f, type: 3}
+  enemyPrefabs:
+  - {fileID: 7154734564234008943, guid: 54bbb44a702f99840a8369bac5eb65b7, type: 3}
+  - {fileID: 5524738717953547287, guid: fbbedb32d0348a5459486f5b6488634a, type: 3}
+  introScreen: {fileID: 0}
+--- !u!114 &7558531768822621785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170743559140949966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f3b28668b7193b4b86e3fbebfaeab69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navMeshSurfaces: []
